@@ -29,14 +29,14 @@ import json
 from requests import adapters
 
 
-def queryAddress(address:str):
+def queryAddress(address:str,api_key):
     """
-    :key: 高德地图开放API key 'dc05e6ec151250ce99dd14143a5354bd'
+    :key: 高德地图开放API key 'xxxxx'
     :param court_name:
     :return:
     """
 
-    api = f'https://restapi.amap.com/v3/geocode/geo?address={address}&output=JSON&key=dc05e6ec151250ce99dd14143a5354bd'
+    api = f'https://restapi.amap.com/v3/geocode/geo?address={address}&output=JSON&key={api_key}'
     for retry in range(3):
         try:
             response = requests.get(api).json()
@@ -62,5 +62,5 @@ def queryAddress(address:str):
 
 if __name__ == '__main__':
     court_name = "江苏省丰县人民法院"
-    json_data = queryAddress(court_name)
+    json_data = queryAddress(court_name,'your_api_key')
     print(json_data)
