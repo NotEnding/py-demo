@@ -35,9 +35,9 @@ count：单页条数
 city：城市
 '''
 # url = f'http://api.douban.com/v2/movie/in_theaters?apikey={api_key}&city=武汉' # {'msg': 'invalid_credencial2', 'code': 109, 'request': 'GET /v2/movie/coming_soon'}
-# url = f'http://t.yushu.im/v2/movie/in_theaters?apikey={api_key}&city=武汉'     #2020.08.20 可用，正常返回数据
-# response = requests.get(url)
-# print(response.json())
+url = f'http://t.yushu.im/v2/movie/in_theaters?apikey={api_key}&city=武汉'     #2020.08.20 可用，正常返回数据
+response = requests.get(url)
+print(response.json())
 
 
 
@@ -51,9 +51,9 @@ city：城市
 # count：单页条数
 '''
 # url = f"https://api.douban.com/v2/movie/top250?apikey={api_key}"  #不可用，返回{'msg': 'invalid_credencial2', 'code': 109, 'request': 'GET /v2/movie/coming_soon'}
-# url = f"http://t.yushu.im/v2/movie/top250?apikey={api_key}"         #2020.8.20 可用，正常返回数据
-# response = requests.get(url)
-# print(response.json())
+url = f"http://t.yushu.im/v2/movie/top250?apikey={api_key}"         #2020.8.20 可用，正常返回数据
+response = requests.get(url)
+print(response.json())
 
 
 
@@ -66,9 +66,9 @@ city：城市
 # count：单页条数
 '''
 # url = f"https://api.douban.com/v2/movie/coming_soon?apikey={api_key}"  #不可用，返回{'msg': 'invalid_credencial2', 'code': 109, 'request': 'GET /v2/movie/coming_soon'}
-# url = f"http://t.yushu.im/v2/movie/coming_soon?apikey={api_key}"         #2020.8.20 可用
-# response = requests.get(url)
-# print(response.json())
+url = f"http://t.yushu.im/v2/movie/coming_soon?apikey={api_key}"         #2020.8.20 可用
+response = requests.get(url)
+print(response.json())
 
 
 '''
@@ -81,9 +81,9 @@ city：城市
 # tag：要搜索的电影的标签
 '''
 # url = f"https://api.douban.com/v2/movie/search?apikey={api_key}&q=教父"  #不可用，返回{'msg': 'invalid_credencial2', 'code': 109, 'request': 'GET /v2/movie/search'}
-# url = f"http://t.yushu.im/v2/movie/search?apikey={api_key}&q=教父"  #可用
-# response = requests.get(url)
-# print(response.json())
+url = f"http://t.yushu.im/v2/movie/search?apikey={api_key}&q=教父"  #可用
+response = requests.get(url)
+print(response.json())
 
 
 '''

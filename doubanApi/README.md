@@ -2,6 +2,10 @@
 
 ## 豆瓣API 说明
 
+具体示例：请参考 doubanApi_demo.py
+
+新版本接口已由 http://api.douban.com 更改为 http://t.yushu.im
+
 #### 正在热映
 
 接口示例
@@ -218,4 +222,3 @@ print(response.json())
     "year": 2018
 }
 ```
-
