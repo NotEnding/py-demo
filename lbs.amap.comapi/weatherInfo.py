@@ -30,14 +30,14 @@ import json
 from requests import adapters
 
 
-def queryWeather(city_code: str):
+def queryWeather(city_code: str,api_key):
     """
     :key: 高德地图开放API key 'dc05e6ec151250ce99dd14143a5354bd'
     :param court_name:
     :return:
     """
 
-    api = f'https://restapi.amap.com/v3/weather/weatherInfo?city={city_code}&output=JSON&key=dc05e6ec151250ce99dd14143a5354bd'
+    api = f'https://restapi.amap.com/v3/weather/weatherInfo?city={city_code}&output=JSON&key={api_key}'
     for retry in range(3):
         try:
             response = requests.get(api).json()
@@ -55,5 +55,5 @@ def queryWeather(city_code: str):
 
 if __name__ == '__main__':
     city_code = '420100'
-    res = queryWeather(city_code)
+    res = queryWeather(city_code,'your_api_key')
     print(res)
