@@ -47,7 +47,7 @@ def Ip_proxy():
     proxies = None
     url = 'http://api.ip.data5u.com/dynamic/get.html'
     params = {
-        'order': 'de15a979c3c4c0ab0de6e89f6a37924d',
+        'order': 'xxxxxx',
         'random': 1,
         'json': 1
     }
