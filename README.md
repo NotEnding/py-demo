@@ -30,3 +30,5 @@ https://restapi.amap.com/v3/weather/weatherInfo
 3.根据分析，去除水印信息，进行下载
 
 原出处博客：https://blog.csdn.net/qq_44700693/article/details/108089085
+
+### 7.python RPC demo
