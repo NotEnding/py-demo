@@ -95,5 +95,5 @@ if __name__ == "__main__":
         results.append(mdtext)
 
     with open("README.md", 'w', encoding='utf-8') as f:
-        f.write("## 以下内容由代码自动生成\n生成方法: `python3 main.py`\n")
+        f.write("## 以下内容由代码自动生成\n生成方法: `python3 server.py`\n")
         f.write('\n\n'.join(results))

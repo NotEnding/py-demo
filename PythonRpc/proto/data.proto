@@ -1,0 +1,8 @@
+syntax = "proto3";
+package example;
+service FormatData { //定义服务,用在rpc传输中
+  rpc DoFormat(Data) returns (Data){}
+}
+message Data {
+  string text = 1;
+}
