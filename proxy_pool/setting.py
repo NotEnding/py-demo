@@ -28,7 +28,7 @@ BANNER = r"""
 SHOW_CONFIG = True            # print config
 
 # ############### server config ###############
-HOST = "0.0.0.0"
+HOST = "192.168.9.31"
 
 PORT = 5010
 
