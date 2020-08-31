@@ -36,3 +36,6 @@ https://restapi.amap.com/v3/weather/weatherInfo
 
 
 ### 8. python coder 表白必备
+
+
+### 9. wxpy 模块，接入网页版微信，并发送消息，获取用户信息等
