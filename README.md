@@ -39,3 +39,7 @@ https://restapi.amap.com/v3/weather/weatherInfo
 
 
 ### 9. wxpy 模块，接入网页版微信，并发送消息，获取用户信息等
+
+### 10.今天吃什么，随机简化版demo。
+
+有时间可加入网络搜索，实现真正实时的top 10
