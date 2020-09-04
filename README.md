@@ -43,3 +43,6 @@ https://restapi.amap.com/v3/weather/weatherInfo
 ### 10.今天吃什么，随机简化版demo。
 
 有时间可加入网络搜索，实现真正实时的top 10
+
+
+### 11.人像动漫化
