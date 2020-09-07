@@ -1,4 +1,4 @@
-#-*- coding:utf-8 _*- 
+# -*- coding:utf-8 _*-
 """ 
 @file: delicious_food.py 
 @time: 2020/09/03
@@ -28,7 +28,7 @@ import random
 from requests import adapters
 
 
-def queryDelicious(keywords:str,city:str,key:str):
+def queryDelicious(keywords: str, city: str, key: str):
     """
     :key: 高德地图开放API key 'xxxxx'
     :param court_name:
@@ -41,22 +41,38 @@ def queryDelicious(keywords:str,city:str,key:str):
             response = requests.get(api).json()
             if response['status'] != "1":
                 continue
-            top_10_dict = {}
-        except (json.JSONDecodeError, adapters.SSLError, requests.exceptions.ReadTimeout,IndexError):
+            top_10_list = []
+            for poi in response['pois']:
+                poi_dict = {
+                    "name": poi['name'],  # 店名
+                    "type": poi['type'],  # 餐厅类别,
+                    "tag": poi['tag'],  # 标签
+                    "cost": poi['biz_ext'].get('cost', '0.00'),  # 人均消费
+                    "rating": poi['biz_ext'].get("rating", '0.0'),  # 评分
+                    "tel": poi['tel'],  # 联系电话
+                    "pname": poi['pname'],  # 省
+                    "cityname": poi['cityname'],  # 市
+                    "adname": poi['adname'],  # 区
+                    "address": poi['address'],  # 位置
+                }
+                top_10_list.append(poi_dict)
+        except (json.JSONDecodeError, adapters.SSLError, requests.exceptions.ReadTimeout, IndexError):
             time.sleep(random.random() * 2)
             continue
         else:
             break
     else:
         return None
-    return response
-
-
+    return top_10_list
 
 
 if __name__ == '__main__':
     keyword = "美食"
-    city = '平顶山市'
-    key = "XXXXXX"
-    queryDelicious(keyword,city,key)
-
+    city = '武汉市'
+    key = "高德api key"
+    top_10_list = queryDelicious(keyword, city, key)
+    if not top_10_list:
+        print('未查询到该城市的美食')
+    else:
+        for t in top_10_list:
+            print(t)
