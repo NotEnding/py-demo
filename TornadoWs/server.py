@@ -39,6 +39,8 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
     # 建立连接的时候
     def open(self):
+        self.application.status_listeners.add(self)
+        self.application.send_status_update_single(self)
         pass
 
     # 接收并处理客户端发送过来的消息

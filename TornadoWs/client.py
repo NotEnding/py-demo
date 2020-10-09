@@ -48,11 +48,11 @@
 
 
 from websocket import create_connection
-ws = create_connection("ws://192.168.9.31:5600/ws")
+ws = create_connection("ws://192.168.9.26:8080/status")
 print("Sending ‘Hello, World‘...")
-ws.send("Hello, World")
-print("Sent")
-print("Receiving...")
+# ws.send("这是我需要呵呵才能够")
+# print("Sent")
+# print("Receiving...")
 result =  ws.recv()
 print("Received ‘%s‘" % result)
 ws.close()
