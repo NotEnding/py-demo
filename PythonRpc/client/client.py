@@ -1,6 +1,6 @@
 #-*- coding:utf-8 _*- 
 """ 
-@file: client.py
+@file: test_synthesis.py
 @time: 2020/08/27
 @site:  
 @software: PyCharm 

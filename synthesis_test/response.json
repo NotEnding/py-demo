@@ -1,0 +1,7 @@
+{
+  "code": 200,
+  "status": "Status.FINISHED",
+  "message": "text synthesis wave data finished",
+  "pageNum": "",
+  "wav_data":[-3, -22, -34, -45, -43, -37, -30, -24, -22, -15, -11, -5, 0, 5]
+}
