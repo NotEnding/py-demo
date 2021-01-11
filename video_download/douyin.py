@@ -94,7 +94,8 @@ class DY():  # 抖音
             if len(str(video_name)) > 20:
                 video_name = video_name[:20]
             video = requests.get(video_url, proxies=proxies, headers=self.headers).content
-            with open(os.path.join(video_path,f'{str(video_name)}.mp4'),'wb') as f:
+            with open(os.path.join(video_path,f'{str(video_name)}.mp4'),
+                      'wb') as f:
                 f.write(video)
             if 'www.iesdouyin.com' in self.url:
                 print("【抖音短视频】: {}.mp4 无水印视频下载完成！".format(video_name))
@@ -103,7 +104,7 @@ class DY():  # 抖音
 
 
 if __name__ == '__main__':
-    s_url = 'https://v.douyin.com/JMKHkqt/' #客户端分享链接
+    s_url = 'https://v.douyin.com/Jt16WDe/' #客户端分享链接
     DY(s_url).dy_download()
 
     # proxy = get_proxy().get("proxy")

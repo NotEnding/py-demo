@@ -17,6 +17,6 @@ for file in `ls $logdir | grep '\.log'`; do
 	echo `date` > $logdir/$file
 	mv $backdir/$file $backdir/`date +"%Y-%m-%d"`
 	rm -r $backdir/`date +"%Y-%m-%d" -d "-32 days"`
-	python /home/py-public/synthesis/server/status_monitor.py --mailserver smtp.163.com --username_send 18947187988@163.com --password jiayan150124 --username_recv 1060036161@qq.com
+	python /home/py-public/bl-tts/server/status_monitor.py --mailserver smtp.163.com --username_send 18947187988@163.com --password jiayan150124 --username_recv 1060036161@qq.com
 	bash $versiondir/send_email.sh $mailserver $username_send $password $username_recv $versiondir $user
 done
