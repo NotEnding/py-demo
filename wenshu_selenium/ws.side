@@ -1,0 +1,138 @@
+{
+  "id": "3d4a7627-6b62-4664-8900-5da8f5b7a7c1",
+  "version": "2.0",
+  "name": "ws",
+  "url": "https://wenshu.court.gov.cn",
+  "tests": [{
+    "id": "77ef4998-ec8b-4642-909b-77c96c972235",
+    "name": "ws",
+    "commands": [{
+      "id": "af87c974-163d-465d-b32c-a090815c6953",
+      "comment": "",
+      "command": "open",
+      "target": "/website/wenshu/181010CARHS5BS3C/index.html?open=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53cfa28d-f856-411e-a28c-a04cfd411f45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55d14870-e5c2-4938-9785-0f2f98729197",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1012487-474a-4cd0-983a-b0382a75166f",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.phone-number-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c41d64c-7194-4db8-a2f9-ce146874a1f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.phone-number-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "13184358837"
+    }, {
+      "id": "1e2907fb-ebaa-477a-9ae3-1a4b4ba00350",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.password", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2ca7d12-af18-4279-ade0-caee569cc83c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.password", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Netintech2020"
+    }, {
+      "id": "f4a931de-9b6a-4c6b-bf2e-9d9b0f682e27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb931122-3256-4168-87cd-28e080db0562",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=忘记密码",
+      "targets": [
+        ["linkText=忘记密码", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'忘记密码')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/form/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/forgotPwd')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'忘记密码')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd8d8583-b245-4717-8f30-8ca269205a9c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=忘记密码",
+      "targets": [
+        ["linkText=忘记密码", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'忘记密码')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/form/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/forgotPwd')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'忘记密码')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e1d0eba3-5e18-4c68-b4c5-a8c620413515",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["77ef4998-ec8b-4642-909b-77c96c972235"]
+  }],
+  "urls": ["https://wenshu.court.gov.cn/"],
+  "plugins": []
+}
